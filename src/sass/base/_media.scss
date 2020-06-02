@@ -32,6 +32,8 @@
     }
 
     .promo  {
+        min-height: 500px;
+        padding: 11px 0 50px 0;
         &__wrapper  {
             align-items: center;
             margin-top: 45px;
@@ -61,5 +63,28 @@
             position: relative;
             left: 57px;
         }
+    }
+    .advantages {
+        padding: 35px 0 40px 0;  
+        &__wrapper {
+            margin: 0 auto;
+            margin-top: 25px;
+            display: block;
+        }     
+        &__block {
+            max-width: 100%;
+            &:nth-child(2) {
+                margin: 10px 0 10px 0;
+            }
+        } 
+        &__subtitle {
+            margin-top: 15px;
+        }
+        &__descr {
+            margin-top: 10px;
+        }
+    }
+    .title {
+        font-size: 24px;
     }
 }
