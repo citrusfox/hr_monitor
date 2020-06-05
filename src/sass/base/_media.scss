@@ -1,7 +1,44 @@
 
 @media  ( max-width: 1200px )   {}
-@media  ( max-width: 991px )   {}
-@media  ( max-width: 767px )   {}
+@media  ( max-width: 991px )   {
+    .carousel   {
+        &__inner    {
+            width: 80%;
+        }
+    }
+}
+@media  ( max-width: 767px )   {
+    .slick-next, .slick-prev {
+        display: none !important;
+    }
+    .slick-dots {
+        margin-top: 30px;
+        list-style-type: none;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        li {
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height: 5px;
+            margin: 0 5px;
+            padding: 0;
+            opacity: 0.37;
+            background-color: black;
+            cursor: pointer;
+            button {
+                display: none;
+            }
+            
+        } 
+        .slick-active {
+            background-color: $main-color; 
+            opacity: 1;
+        }       
+    }
+}
 @media  ( max-width: 575px )   {
 
     .container {
@@ -88,10 +125,10 @@
     .feed-form  {
         width: 100%;
     }
-    .carousel   {
+    /* .carousel   {
         padding: 81px   15px;
         &__inner    {
             width: 90%;
         }
-    }
+    } */
 }
