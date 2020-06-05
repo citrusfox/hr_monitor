@@ -1,0 +1,110 @@
+.catalog {
+    padding-bottom: 100px;
+    &__tabs {
+        margin-top: 70px;
+        list-style-type: none;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+
+        color: #6b6b6b;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center; 
+        line-height: 50px;       
+        transform: skewX(-25deg);
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            background-color: $main-color;            
+            border: none;
+            color: #ffffff;          
+        }
+    }
+    &__content {
+        margin-top: 60px;
+        .catalog-item {
+            max-width: 300px;
+            min-height: 440px;
+            border: 2px solid #e8e8e8;
+            background-color: #ffffff;
+            text-align: center;
+            position: relative;
+            &__img {
+                display: block;
+                padding: 20px 0;
+                margin: 0 auto;
+            }
+            &__subtitle {
+                color: #0d0d0d;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            &__descr {
+                padding: 16px 20px;
+                color: #0d0d0d;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            &__link {
+                color: #c70101;
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+            hr {
+                margin: 19px 20px;
+                height: 1px;
+                background-color: #e8e8e8;
+                border: none;
+            }
+            &__prices {
+                /* margin-top: 23px; */
+                padding: 23px 20px;
+                text-align: left;
+                span {
+                    color: #555555;
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-decoration: line-through;
+                    position: absolute;
+                    bottom: 54px;
+                }
+            }
+            &__btn {
+                width: 131px;
+                height: 40px;
+                border-radius: 5px;
+                background-color: #c70101;
+                border: none;
+
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                position: absolute;
+                bottom: 27px;
+                right: 19px;
+            }
+        }
+        
+    }
+}
