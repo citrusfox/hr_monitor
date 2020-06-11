@@ -84,6 +84,8 @@ $(document).ready(function(){
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
+    //  email
+
     $('form').submit(function (e) {
       e.preventDefault(); //  отменяетстандартноеповедениебраузера,страницанеперезагружается
       $.ajax({
@@ -98,5 +100,22 @@ $(document).ready(function(){
       });
       return  false;
     });
+
+    //  pageup
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop()>1600) {
+          $(".pageup").fadeIn();
+        } else  {
+          $(".pageup").fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function(){
+      const _href = $(this).attr("href");
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      return false;
+    });
+
 });
           
