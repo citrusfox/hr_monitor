@@ -115,6 +115,7 @@
             font-weight: 700;
         }
         &__wrapper  {
+            position: relative;
             display: flex;
             width: calc(200% + 40px);
         }
@@ -141,6 +142,9 @@
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
+            }
+            ul  {
+                padding: 0;
             }
             li {
                 position: relative;
